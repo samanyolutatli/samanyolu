@@ -428,6 +428,20 @@ footer p {
     opacity: 0;
     transition-duration: .7s;
 }
+.scroll-indicator {
+  font-size: 28px;
+  color: #000;
+  animation: fadeArrow 1.5s infinite;
+  pointer-events: none;
+  display: inline-block;
+}
+
+@keyframes fadeArrow {
+  0% { opacity: 0.3; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(6px); }
+  100% { opacity: 0.3; transform: translateX(0); }
+}
+
 
 .Btn:hover .text {
     opacity: 1;
