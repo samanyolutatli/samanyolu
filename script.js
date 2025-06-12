@@ -54,10 +54,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const scrollContainer = document.querySelector('.scroll-container');
     if (scrollContainer) {
       setTimeout(() => {
-        scrollContainer.scrollBy({ left: 400, behavior: 'smooth' });
+        scrollContainer.scrollBy({ left: 4000, behavior: 'smooth' });
 
         setTimeout(() => {
-          scrollContainer.scrollBy({ left: -400, behavior: 'smooth' });
+          scrollContainer.scrollBy({ left: -4000, behavior: 'smooth' });
         }, 700); // geri dönüş süresi
       }, 800); // sayfa yüklendikten sonra bekleme süresi
     }
